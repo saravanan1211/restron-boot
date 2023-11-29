@@ -1,0 +1,462 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Heebo&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Heebo&family=Nunito:wght@800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Pacifico&display=swap);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#FEA116;
+    --secondar-color:#ffff;
+    --tertiary-color:#00000000;
+    --color1:#0F172B;
+    --color2:#666565;
+    --color3:#0F172B;
+    --font-family1: 'Nunito', sans-serif;
+    --font-family2: 'Heebo', sans-serif;
+    --font-family3: 'Pacifico', cursive;
+}
+body{
+    overflow-x: hidden;
+}
+.navbar-nav a {
+   color: white;
+}
+
+.navbar-nav a:hover{
+    color: rgb(255, 170, 0);
+}
+#home{
+    background-image: url(images/bg-hero.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.homecontainer{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color1);
+    opacity: .9;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.texa{
+    width: 50%;
+    animation: spin 40s linear infinite;
+    margin: 50px auto;
+}
+.vexa h4{
+    color: rgb(255, 170, 0);
+    font-family: var(--font-family3);
+    
+}
+.vexa h4:after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #FEA116;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.six{
+    text-transform: capitalize;
+    font-family: var(--color1);
+    font-weight: bolder;
+}
+.six i{
+    color: #FEA116;
+
+}
+.no::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 40px;
+    background-color: #FEA116;
+    margin-left: -20px;
+    margin-top: 10px;
+}
+.no{
+    color: #FEA116;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.wed{
+    background-image: url(images/video.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+.sun h4::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background-color: #FEA116;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+.sun{
+    height: 80vh;
+}
+.team::after{
+    width: 40px;
+    background-color: #FEA116;
+    height: 2px;
+    position: absolute;
+    content: '';
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.team::before{
+    width: 40px;
+    background-color: #FEA116;
+    height: 2px;
+    position: absolute;
+    content: '';
+    margin-top: 20px;
+    margin-left: -50px;
+}
+.teamcard{
+    width: 261px;
+    height: 365px;
+
+}
+.group-card{
+    display: flex;
+    gap: 80px;
+    margin-top: 50px;
+}
+.tcard{
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--secondar-color);
+
+}
+.timg{
+    width: 213px;
+    height: 213px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.timg img{
+    width: 100%;
+}
+.tcard h3{
+    font-family: var(--font-family1);
+}
+.tcard p{
+    font-family: var(--font-family2);
+    color: var(--color2);
+    font-size: 14px;
+}
+.socioicons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--secondar-color);
+    z-index:0;
+}
+.socioicons i{
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: var(--secondar-color);
+    border-radius: 50% 50% 0 0;
+}
+.teamcard:hover .socioicons .white{
+    margin-top: 30px;
+    transition: 1s ease-in-out;
+}
+.white{
+    margin-top: -50px;
+    width: 100%;
+    height: 40px;
+    background-color: #f5f5f5;
+    z-index: 1;
+}
+.teamcard:hover .timg img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.testi::after{
+    width: 40px;
+    background-color: #FEA116;
+    height: 2px;
+    position: absolute;
+    content: '';
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.testi::before{
+    width: 40px;
+    background-color: #FEA116;
+    height: 2px;
+    position: absolute;
+    content: '';
+    margin-top: 15px;
+    margin-left: -50px;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.sequre-box h1{
+    width: 500px;
+    font-size: 60px; 
+    font-family: var(--font-family1); 
+    font-weight: bolder;
+}
+.sequre-box{
+    width: 500px;
+    margin: 150px auto;
+}
+.var{
+    background-color: white;
+    padding: 10px 0;
+}
+.var:hover{
+    background-color: #FEA116;
+    color: white;
+    transition: .5s;
+}
+.exper{
+    display: flex;
+}
+.ten h4{
+    font-family: var(--font-family3);
+    color: #FEA116;
+}
+.ten h4:after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #FEA116;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.ten h4::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #FEA116;
+    margin-top: 20px;
+    margin-left: -60px;
+
+}
+.teamcard{
+    width: 261px;
+    height: 365px;
+    /* background-color: var(--secondar-color); */
+}
+.group-card{
+    display: flex;
+    gap: 80px;
+    margin-top: 50px;
+}
+.tcard{
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--secondar-color);
+
+}
+.timg{
+    width: 213px;
+    height: 213px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.timg img{
+    width: 100%;
+}
+.tcard h3{
+    font-family: var(--font-family1);
+}
+.tcard p{
+    font-family: var(--font-family2);
+    color: var(--color2);
+    font-size: 14px;
+}
+.socioicons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--secondar-color);
+    z-index:0;
+}
+.socioicons i{
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: var(--secondar-color);
+    border-radius: 50% 50% 0 0;
+}
+.teamcard:hover .socioicons .white{
+    margin-top: 30px;
+    transition: 1s ease-in-out;
+}
+.white{
+    margin-top: -50px;
+    width: 100%;
+    height: 40px;
+    background-color: #f5f5f5;
+    z-index: 1;
+}
+.teamcard:hover .timg img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.car h3::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #FEA116;
+    margin-top: 20px;
+    margin-left: -60px;
+}
+.car h3::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #FEA116;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.nex h3::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #FEA116;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.rex i{
+    gap: 10px;
+}
+
+.rex i:hover{
+    color: #FEA116;
+}
+.ken p::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 25px;
+    background-color: #666565;
+    margin-left: 5px;
+}
+.card-first:hover{
+    background-color: #FEA116;
+    border:2px solid #0F172B;
+}
+.carousel-indicators button:hover{
+    background-color: #FEA116;
+
+}
+
+#client{
+    background-color: rgb(207, 214, 221);
+     width: 100%; 
+     height: 90vh;
+}
+#contact{
+    width: 100%; 
+    height: auto; 
+    background-color: rgb(4, 4, 46);
+    
+}
+.carousel-indicators button{
+    margin-bottom: -100vh;
+}
+
+@media (max-width:500px) and (min-width:300px) {
+    .sequre-box h1{
+        width: 350px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .sequre-box p{
+        width: 70%;
+        text-align: center;
+    }
+    .sequre-box{
+        width: 500px;
+        margin: 60px auto;
+    }
+
+    .wexa{
+        margin-left: 80px;
+    }
+    .texa{
+        margin: 20px auto;
+        margin-left: 50px;
+    }
+    .vexa h4{
+        text-align: center;
+    }
+    .six{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .exper{
+        display: flex;
+        flex-direction: column;
+    }
+    .wed{
+        margin-top: 20px;
+    }
+    .sun{
+        height: auto;
+    }
+    .group-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #client{
+        width: 100%;
+        height: auto;
+        background-color: rgb(207, 214, 221);
+        padding-bottom: 100px;
+      }
+      #contact{
+        width: 100%; 
+        height: auto;  
+        background-color: rgb(4, 4, 46);
+    }
+      .carousel-inner{
+        display: flex;
+        flex-direction: row;
+      }
+    
+     
+
+
+}
